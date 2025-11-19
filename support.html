@@ -7,57 +7,122 @@
     <title>FLUX</title>
     <link rel="stylesheet" href="./flux.css">
     <style>
-        /* banner區塊 */
-        .banner{
+        /* #region banner區塊 */
+        .banner {
             background-image: url(./image/support/banner.png);
             height: 320px;
             margin-top: 90px;
             position: relative;
         }
-        .banner h1{
+
+        .banner h1 {
             position: absolute;
             left: 300px;
             bottom: 30px;
-            
-        }
 
-        .info{
+        }
+        /* #endregion */
+
+        /* #region 服務介紹 */
+        .info {
             padding-top: 120px;
             padding-bottom: 60px;
         }
-        .info-card{
+
+        .info-card {
             box-sizing: border-box;
-            /* height: 268px; */
             border: 2px solid #fff;
             border-radius: 10px;
             padding: 48px;
             font-size: 20px;
         }
-        .info-card:first-child{
+
+        .info-card:first-child {
             margin-bottom: 52px;
         }
-        .info-card p{
+
+        .info-card p {
             margin-top: 10px;
             font-size: 20px;
         }
-        .info-card ul li{
+
+        .info-card ul li {
             list-style: disc;
         }
-        .info-card ol li{
-            list-style:decimal;
-            margin-left:40px ;
-        }
 
-        .slogan h2+h2{
+        .info-card ol li {
+            list-style: decimal;
+            margin-left: 40px;
+        }
+        /* #endregion */
+
+        /* #region 標語 */
+        .slogan h2+h2 {
             text-align: end;
         }
-        .slogan{
+
+        .slogan {
             margin-bottom: 180px;
         }
+        /* #endregion */
 
 
-        /* #region form */
-        .form-container{
+        /* #region 聯絡我們 */
+        .contact>h2 {
+            text-align: center;
+        }
+
+        .contact>p {
+            text-align: center;
+            margin: 30px 0 80px 0;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            gap: 200px;
+        }
+
+        .contact-container .card {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .contact-container .decline {
+            width: 1px;
+            height: 400px;
+            background-color: #7D7D7D;
+        }
+
+        .location {
+            padding: 190px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 180px;
+        }
+
+        .location h3 {
+            color: #FF0066;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+        /* #endregion */
+
+
+        /* #region 表單 */
+        .form-section{
+            padding: 140px 0;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .form-container {
             background-color: #7D7D7D;
             width: 1371px;
             border-radius: 10px;
@@ -67,27 +132,35 @@
             flex-direction: column;
             padding: 30px 0;
         }
-        .form{
-            padding:30px 22px 35px ;
+
+        .form {
+            padding: 30px 22px 35px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            gap:29px 0;
+            gap: 29px 0;
         }
-        input{
-            margin-top: 9px;
+
+        input {
+            /* margin-top: 9px; */
             width: 650px;
             height: 50px;
             box-sizing: border-box;
             font-size: 20px;
             padding-left: 10px;
         }
-        label:last-child input{
-            width: 1320px;
-        }
-        label p{
+
+        label textarea {
+            padding: 10px;
+            resize: none;
             font-size: 20px;
         }
+
+        label p {
+            margin-bottom: 9px;
+            font-size: 20px;
+        }
+
         /* #endregion */
     </style>
 </head>
@@ -148,17 +221,18 @@
     </section>
 
     <!-- 聯絡我們區塊 -->
-     <section class="contact">
+    <section class="contact">
         <h2>與我們聯絡</h2>
         <p>我們隨時準備好為您提供支援。無論您對產品有疑問、需要技術協助，請透過以下任一高效管道聯繫我們。</p>
         <div class="contact-container">
-            <div class="input card">
-                <img src="" alt="">
+            <div class="contact-form card">
+                <img src="./image/support/Article icon 1 1.svg" alt="">
                 <h5>提交表單 (至網頁下方)</h5>
                 <p>這是處理技術問題最有效方式。請詳細描述您的問題，以便我們的技術專家能精準地為您解決。</p>
             </div>
-            <div class="phone card">
-                <img src="" alt="">
+            <div class="decline"></div>
+            <div class="contact-phone card">
+                <img src="./image/support/customer assistant icon 1.svg" alt="">
                 <h5>諮詢客服專線</h5>
                 <p>連絡電話:(03) 3333-11111</p>
             </div>
@@ -169,45 +243,52 @@
                 <p>地址:桃園市中壢區復興路46號8樓</p>
                 <p>(地理位置如右圖所示)</p>
             </div>
-            <div class="map"></div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2491445954674!2d121.22101638069707!3d24.957636643554775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1763540099391!5m2!1szh-TW!2stw"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </section>
 
     <!-- form區塊 -->
-    <div class="form-container">
-        <h1>會員註冊</h1>
-        <form class="form" action="#">
-            <label id="account">
-                <p>帳號(E-mail)</p>
-                <input type="text">
-            </label>
-            <label id="confirm-account">
-                <p>再次確認帳號</p>
-                <input type="text">
-            </label>
-            <label id="password">
-                <p>密碼</p>
-                <input type="text">
-            </label>
-            <label id="confirm-password">
-                <p>再次確認密碼</p>
-                <input type="text">
-            </label>
-            <label id="name">
-                <p>真實姓名</p>
-                <input type="text">
-            </label>
-            <label id="phone">
-                <p>連絡電話</p>
-                <input type="text">
-            </label>
-            <label id="address">
-                <p>地址</p>
-                <input type="text">
-            </label>
-        </form>
-        <a href="#" class="btn">確認送出</a>
-    </div>
+    <section class="form-section bbg">
+        <div class="form-container">
+            <h1>線上客服填寫表單</h1>
+            <form class="form" action="#">
+                <label id="account">
+                    <p>國家</p>
+                    <input type="text">
+                </label>
+                <label id="confirm-account">
+                    <p>姓名</p>
+                    <input type="text">
+                </label>
+                <label id="password">
+                    <p>E-mail</p>
+                    <input type="text">
+                </label>
+                <label id="confirm-password">
+                    <p>聯絡電話</p>
+                    <input type="text">
+                </label>
+                <label id="name">
+                    <p>產品型號</p>
+                    <input type="text">
+                </label>
+                <label id="phone">
+                    <p>產品序號</p>
+                    <input type="text">
+                </label>
+                <label id="address">
+                    <p>問題描述</p>
+                    <textarea rows="5" cols="118" placeholder="請輸入內容"></textarea>
+                </label>
+            </form>
+            <a href="#" class="btn">確認送出</a>
+        </div>
+    </section>
 
     <!-- 頁尾 Footer -->
     <footer>
