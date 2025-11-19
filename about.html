@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUX</title>
+    <link rel="stylesheet" href="./flux.css">
+    <style>
+        /* #region banner*/
+        .banner {
+            background-image: url(./image/about/aboutbanner.jpg);
+            height: 850px;
+            margin-top: 90px;
+            position: relative;
+            /* margin-bottom: 108px; */
+        }
+
+        .banner-text {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 140px;
+            width: fit-content;
+            text-align: center;
+        }
+
+        .banner-text h4 {
+            font-weight: normal;
+            margin: 16px 0;
+        }
+
+        /* #endregion */
+
+        /* #region slogan*/
+        .slogan {
+            text-align: center;
+            padding: 100px 0;
+            background-color: #000000c0;
+        }
+
+        .slogan h3 {
+            font-weight: normal;
+        }
+
+        .slogan .title {
+            width: fit-content;
+            margin: auto;
+        }
+
+        .slogan .title .dec {
+            margin-top: 16px;
+            margin-bottom: 30px;
+        }
+
+        /* #endregion */
+
+        /* #region intro*/
+        .intro {
+            background-image: url(./image/about/bg.jpg);
+            height: 980px;
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-top: 100px; */
+        }
+
+        .intro .content {
+            width: 1096px;
+        }
+
+        .intro .content h3 {
+            font-weight: normal;
+        }
+
+        .intro .content p {
+            margin-top: 140px;
+        }
+
+        /* #endregion */
+
+        /* #region promise*/
+        .promise {
+            padding: 120px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .promise-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .promise-header h2 {
+            font-weight: normal;
+        }
+
+        .promise-header .dec {
+            margin-top: 16px;
+            margin-bottom: 35px;
+        }
+
+        .promise-header img {
+            margin-top: 63px;
+            margin-bottom: 85px;
+        }
+
+        .promise-content h3{
+            font-weight: normal;
+            margin-bottom: 86px;
+        }
+        .promise-content-container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .promise-item{
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .promise-item h5{
+            margin-top: 35px;
+            margin-bottom: 23px;
+        }
+        /* #endregion */
+
+        /* #region team */
+        .team{
+            padding: 70px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .team img{
+            width: 700px;
+            margin-bottom: 60px;
+        }
+        .team h2{
+            font-weight: normal;
+        }
+        .team p{
+            margin-top: 40px;
+            width: 874px;
+            text-align: center;
+        }
+        /* #endregion */
+
+        /* #region join */
+        .join{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 100px;
+            gap: 60px;
+        }
+        .join .btn{
+            width: 270px;
+        }
+        /* #endregion */
+    </style>
+</head>
+
+<body>
+    <!-- header導航 -->
+    <header>
+        <nav class="header-nav">
+            <a href="./index.html" class="logo">
+                <img src="./image/common/headerlogo.png" alt="">
+            </a>
+            <ul class='nav-list'>
+                <li><a href="#">產品瀏覽</a></li>
+                <li><a href="#">最新動態</a></li>
+                <li><a href="#">技術支援</a></li>
+                <li><a href="#">會員專區</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" id="uer-icon"><img src="./image/common/faUser.png" alt=""></a>
+                <a href="#" id="cart-icon"><img src="./image/common/cart.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner區塊 -->
+    <section class="banner">
+        <div class="banner-text">
+            <h1>關於FLUX</h1>
+            <h4>About</h4>
+            <h3>掌控脈動 定義勝利</h3>
+        </div>
+    </section>
+
+    <!-- 標語區塊 -->
+    <section class="slogan">
+        <div class="title">
+            <h2>定義你的競技核心</h2>
+            <div class="dec" style="background-color: #A600FF; height: 12px;width: 280px;"></div>
+        </div>
+        <h3>我們的起源：FLUX 核心脈動</h3>
+    </section>
+
+    <!-- 介紹 -->
+    <section class="intro">
+        <div class="content">
+            <h3>FLUX 脈動誕生於一個堅定的信念</h3>
+            <h3>在極限競技中，裝備不應該是變數，而是穩定的武器。</h3>
+            <p>我們是一群由頂尖硬體工程師、工業設計師和身經百戰的 PC 遊戲玩家所組成的團隊。我們厭倦了在性能與美學之間做妥協。因此，我們創立 FLUX，目標只有一個：打造能夠消除所有障礙、只留下勝利的高性能電競滑鼠。
+            </p>
+        </div>
+    </section>
+
+    <!-- 承諾 -->
+    <section class="promise">
+        <div class="promise-header">
+            <h2>我們的使命：消除限制，驅動潛能</h2>
+            <div class="dec" style="background-color: #A600FF; height: 12px;width: 280px;"></div>
+            <p>FLUX 脈動的使命，是為全球 PC 遊戲愛好者提供最前沿、最高效能的競技滑鼠</p>
+            <img src="./image/about/mouse.jpg" alt="">
+        </div>
+        <div class="promise-content box">
+            <h3>我們承諾</h3>
+            <div class="promise-content-container">
+                <article class="promise-item">
+                    <div class="promise-img">
+                        <img src="./image/about/Electrical 1.svg" alt="">
+                    </div>
+                    <h5>消除延遲與束縛</h5>
+                    <p>透過專利 Hyper-Flow™ 零感無線技術，徹底消除傳輸瓶頸，讓裝備成為玩家直覺的延伸。</p>
+                </article>
+                <article class="promise-item">
+                    <div class="promise-img">
+                        <img src="./image/about/target icon 2 1.svg" alt="">
+                    </div>
+                    <h5>創造決勝優勢</h5>
+                    <p>確保每一款 FLUX 滑鼠在精準度、速度和穩定性上都達到業界頂級標準，為玩家提供決勝級的競技優勢。</p>
+                </article>
+                <article class="promise-item">
+                    <div class="promise-img">
+                        <img src="./image/about/trophy icon 10 1.svg" alt="">
+                    </div>
+                    <h5>堅持極簡致勝</h5>
+                    <p>讓科技隱藏在極簡美學之下，所有設計都必須服務於提升操控性與競技效率。</p>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 團隊 -->
+    <section class="team bbg">
+        <img src="./image/about/team.png" alt="">
+        <h2>FLUX 團隊核心：專業與狂熱的交匯</h2>
+        <p>我們每一位團隊成員都是熱情的 PC 遊戲愛好者。在產品正式推出前，我們會進行數千小時的實戰壓力測試。我們不只設計產品，我們更是親自使用產品的最終競技者。</p>
+    </section>
+
+    <!-- 加入我們 -->
+    <section class="join">
+        <h2>加入FLUX團隊</h2>
+        <a href="#" class="btn">查看職位</a>
+    </section>
+    <!-- 頁尾 Footer -->
+    <footer>
+        <div class="footer-container box">
+            <div class="log">
+                <img src="./image/common/footerlogo.png" alt="">
+            </div>
+            <div class="footer-text">
+                <p>FLUX | 脈動股份有限公司 <br>
+                    (03) 3333-11111 | 桃園市中壢區復興路46號8樓</p>
+            </div>
+            <div class="footer-icons">
+                <a href="#" class="footer-icon"><img src="./image/common/ic_baseline-facebook.png" alt=""></a>
+                <a href="#" class="footer-icon"><img src="./image/common/ri_instagram-line.png" alt=""></a>
+                <a href="#" class="footer-icon"><img src="./image/common/mingcute_twitter-line.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

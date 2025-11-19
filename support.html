@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUX</title>
+    <link rel="stylesheet" href="./flux.css">
+    <style>
+        /* banner區塊 */
+        .banner{
+            background-image: url(./image/support/banner.png);
+            height: 320px;
+            margin-top: 90px;
+            position: relative;
+        }
+        .banner h1{
+            position: absolute;
+            left: 300px;
+            bottom: 30px;
+            
+        }
+
+        .info{
+            padding-top: 120px;
+            padding-bottom: 60px;
+        }
+        .info-card{
+            box-sizing: border-box;
+            /* height: 268px; */
+            border: 2px solid #fff;
+            border-radius: 10px;
+            padding: 48px;
+            font-size: 20px;
+        }
+        .info-card:first-child{
+            margin-bottom: 52px;
+        }
+        .info-card p{
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .info-card ul li{
+            list-style: disc;
+        }
+        .info-card ol li{
+            list-style:decimal;
+            margin-left:40px ;
+        }
+
+        .slogan h2+h2{
+            text-align: end;
+        }
+        .slogan{
+            margin-bottom: 180px;
+        }
+
+
+        /* #region form */
+        .form-container{
+            background-color: #7D7D7D;
+            width: 1371px;
+            border-radius: 10px;
+            border: #fff solid 1px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px 0;
+        }
+        .form{
+            padding:30px 22px 35px ;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap:29px 0;
+        }
+        input{
+            margin-top: 9px;
+            width: 650px;
+            height: 50px;
+            box-sizing: border-box;
+            font-size: 20px;
+            padding-left: 10px;
+        }
+        label:last-child input{
+            width: 1320px;
+        }
+        label p{
+            font-size: 20px;
+        }
+        /* #endregion */
+    </style>
+</head>
+
+<body>
+    <!-- header導航 -->
+    <header>
+        <nav class="header-nav">
+            <a href="./index.html" class="logo">
+                <img src="./image/common/headerlogo.png" alt="">
+            </a>
+            <ul class='nav-list'>
+                <li><a href="#">產品瀏覽</a></li>
+                <li><a href="#">最新動態</a></li>
+                <li><a href="#">技術支援</a></li>
+                <li><a href="#">會員專區</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" id="uer-icon"><img src="./image/common/faUser.png" alt=""></a>
+                <a href="#" id="cart-icon"><img src="./image/common/cart.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner區塊 -->
+    <section class="banner">
+        <h1>支援中心</h1>
+    </section>
+
+    <!-- 說明區塊 -->
+    <section class="info">
+        <div class="container box">
+            <div class="info-card">
+                <h2>產品保固與維修服務</h2>
+                <p>FLUX 產品擁有行業領先的品質保證。我們承諾為所有高性能電競滑鼠提供：</p>
+                <ul>
+                    <li>標準硬體保固： 所有滑鼠產品均享有 [請填寫時長，例如：二年] 的硬體有限保固。涵蓋非人為損壞的製造缺陷與材料瑕疵。</li>
+                    <li>快速維修與更換： 經技術支援確認符合保固條件的故障，我們將在最短時間內提供維修或更換服務，確保您的競技狀態不中斷。</li>
+                    <li>詳細條款： 關於保固範圍、維修流程、退換貨政策等完整細節，請參閱我們的《產品保固條款》。</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h2>故障排除提示</h2>
+                <p>在聯繫我們之前，您可以嘗試以下快速排除步驟：</p>
+                <ol>
+                    <li>韌體更新： 檢查您的滑鼠韌體是否為最新版本。舊版本韌體可能導致功能異常或不穩定。</li>
+                    <li>驅動檢查： 重新安裝 FLUX Control Center，確保驅動程式正確載入。</li>
+                    <li>表面清潔： 檢查滑鼠感應器是否有灰塵或異物覆蓋，並確保滑鼠墊表面乾淨平整。</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- 標語區塊 -->
+    <section class="slogan box">
+        <h2>FLUX 承諾： 我們的技術支援團隊時刻待命，</h2>
+        <h2>以最專業、最有效率的方式，為您的電競裝備保駕護航。</h2>
+    </section>
+
+    <!-- 聯絡我們區塊 -->
+     <section class="contact">
+        <h2>與我們聯絡</h2>
+        <p>我們隨時準備好為您提供支援。無論您對產品有疑問、需要技術協助，請透過以下任一高效管道聯繫我們。</p>
+        <div class="contact-container">
+            <div class="input card">
+                <img src="" alt="">
+                <h5>提交表單 (至網頁下方)</h5>
+                <p>這是處理技術問題最有效方式。請詳細描述您的問題，以便我們的技術專家能精準地為您解決。</p>
+            </div>
+            <div class="phone card">
+                <img src="" alt="">
+                <h5>諮詢客服專線</h5>
+                <p>連絡電話:(03) 3333-11111</p>
+            </div>
+        </div>
+        <div class="location">
+            <div class="text">
+                <h3>洽至我們服務據點</h3>
+                <p>地址:桃園市中壢區復興路46號8樓</p>
+                <p>(地理位置如右圖所示)</p>
+            </div>
+            <div class="map"></div>
+        </div>
+    </section>
+
+    <!-- form區塊 -->
+    <div class="form-container">
+        <h1>會員註冊</h1>
+        <form class="form" action="#">
+            <label id="account">
+                <p>帳號(E-mail)</p>
+                <input type="text">
+            </label>
+            <label id="confirm-account">
+                <p>再次確認帳號</p>
+                <input type="text">
+            </label>
+            <label id="password">
+                <p>密碼</p>
+                <input type="text">
+            </label>
+            <label id="confirm-password">
+                <p>再次確認密碼</p>
+                <input type="text">
+            </label>
+            <label id="name">
+                <p>真實姓名</p>
+                <input type="text">
+            </label>
+            <label id="phone">
+                <p>連絡電話</p>
+                <input type="text">
+            </label>
+            <label id="address">
+                <p>地址</p>
+                <input type="text">
+            </label>
+        </form>
+        <a href="#" class="btn">確認送出</a>
+    </div>
+
+    <!-- 頁尾 Footer -->
+    <footer>
+        <div class="footer-container box">
+            <div class="log">
+                <img src="./image/common/footerlogo.png" alt="">
+            </div>
+            <div class="footer-text">
+                <p>FLUX | 脈動股份有限公司 <br>
+                    (03) 3333-11111 | 桃園市中壢區復興路46號8樓</p>
+            </div>
+            <div class="footer-icons">
+                <a href="#" class="footer-icon"><img src="./image/common/ic_baseline-facebook.png" alt=""></a>
+                <a href="#" class="footer-icon"><img src="./image/common/ri_instagram-line.png" alt=""></a>
+                <a href="#" class="footer-icon"><img src="./image/common/mingcute_twitter-line.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

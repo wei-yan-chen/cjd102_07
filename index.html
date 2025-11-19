@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUX</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./flux.css">
+    <style>
+        /* #region banner區塊 */
+        .banner {
+            margin-top: 90px;
+            height: 740px;
+            background-image: url(./image/index/banner.jpg);
+            /* background-color: #00FFFF; */
+            display: flex;
+            align-items: center;
+        }
+
+        .banner-content {
+            margin-left: 480px;
+        }
+
+        .banner-content p {
+            width: 430px;
+            margin: 20px 0;
+        }
+
+        /* #endregion */
+
+        /* #region new區塊 */
+        .new {
+            padding-top: 100px;
+            padding-bottom: 180px;
+        }
+
+        .new-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 40px;
+        }
+
+        .new-title h2 {
+            margin-bottom: 16px;
+        }
+
+        .new-header .more {
+            color: #00FFFF;
+        }
+
+        .new-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .new-item {
+            width: 400px;
+            transition: .3s;
+        }
+        .new-item:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px 10px #ffffff25;
+        }
+        .new-text {
+            /* background-color: #1d1d1d7e; */
+            margin-top: 9px;
+        }
+        .new-text{
+            padding: 16px;
+        }
+        .new-text h5 {
+            margin: 14px 0;
+        }
+        /* #endregion */
+
+        /* #region about區塊 */
+        .about{
+            padding: 80px 0;
+        }
+        .about-container{
+            display: flex;
+            align-items: center;
+        }
+        .about-text{
+            padding: 0 112px;
+        }
+        .about-text .dec{
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+        .about-text p {
+            margin-bottom: 24px;
+            
+        }
+        /* #endregion */
+
+        /* #region 熱銷區塊 */
+        .hot{
+            padding-top: 127px;
+            padding-bottom: 100px;
+        }
+        .hot-container h2{
+            text-align: center;
+        }
+        .hot-item{
+            width: 315px;
+            /* display: flex; */
+            background: #000000;
+        }
+        .hot-item a{
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hot-text{
+            width: 286px;
+            text-align: center;
+            color: #00FFFF;
+        }
+        .hot-text p{
+            margin-top: 16px;
+        }
+        .hot-img{
+            margin-top: 60px;
+            height: 300px;
+            width: 250px;
+        }
+        .hot-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+         /* #endregion */
+
+        /* #region swiper */
+        .swiper {
+        padding-top: 50px;
+        padding-bottom: 70px;
+        }
+
+        .swiper-slide-active{
+            border: #00FFFF 2px solid;
+            box-shadow: 0 0 20px 10px #ffffff25;
+            transform: scale(3);
+        }
+        .swiper-slide:hover{
+            transform: scale(3);
+        }
+        .swiper-pagination-bullet{
+            width: 16px;        
+            height: 16px;
+            margin: 0 8px !important;
+            background-color: #00FFFF;
+            border: #666666 2px solid;
+        }
+         /* #endregion */
+    </style>
+    
+</head>
+
+<body>
+    <!-- header導航 -->
+    <header>
+        <nav class="header-nav">
+            <a href="#" class="logo">
+                <img src="./image/common/headerlogo.png" alt="">
+            </a>
+            <ul class='nav-list'>
+                <li><a href="#">產品瀏覽</a></li>
+                <li><a href="#">最新動態</a></li>
+                <li><a href="#">技術支援</a></li>
+                <li><a href="#">會員專區</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" id="uer-icon"><img src="./image/common/faUser.png" alt=""></a>
+                <a href="#" id="cart-icon"><img src="./image/common/cart.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner區塊 -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>全新推出!! <br>FLUX-G8 無線滑鼠</h1>
+            <p>結合超快速、低調的類比開關技術與非常纖薄的設計，在速度、舒適性和響應速度方面帶來全新突破。</p>
+            <a href="#" class="btn banner-btn">了解詳情</a>
+        </div>
+    </section>
+
+    <!-- 最新消息 -->
+    <section class="new">
+        <div class="new-container box">
+            <div class="new-header">
+                <div class="new-title">
+                    <h2>最新消息</h2>
+                    <div class="dec" style="background-color: #A600FF; height: 12px;width: 120px;"></div>
+                </div>
+                <a href="./news.html" class="more">前往新聞頁面</a>
+            </div>
+            <div class="new-content">
+                <article class="new-item">
+                    <a href="./newInner.html">
+                        <div class="new-img">
+                            <img src="./image/index/new-mouse.png" alt="">
+                        </div>
+                        <div class="new-text">
+                            <p class="time">2025/10/14</p>
+                            <h5>【極限解鎖】FLUX-G8 無線滑鼠：超越光速的零延遲體驗</h5>
+                            <p>滑鼠標誌性的人體工學外型設計現在比上一代產品更輕超過 25%，並搭載一系列先進技術，推動電競遊戲的極限。</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="new-item">
+                    <a href="./newInner.html">
+                        <div class="new-img">
+                            <img src="./image/index/new-m.png" alt="">
+                        </div>
+                        <div class="new-text">
+                            <p class="time">2025/10/14</p>
+                            <h5>【極限解鎖】FLUX-G8 無線滑鼠：超越光速的零延遲體驗</h5>
+                            <p>滑鼠標誌性的人體工學外型設計現在比上一代產品更輕超過 25%，並搭載一系列先進技術，推動電競遊戲的極限。</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="new-item">
+                    <a href="./newInner.html">
+                        <div class="new-img">
+                            <img src="./image/index/new-person.png" alt="">
+                        </div>
+                        <div class="new-text">
+                            <p class="time">2025/10/14</p>
+                            <h5>【極限解鎖】FLUX-G8 無線滑鼠：超越光速的零延遲體驗</h5>
+                            <p>滑鼠標誌性的人體工學外型設計現在比上一代產品更輕超過 25%，並搭載一系列先進技術，推動電競遊戲的極限。</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於我們 -->
+    <section class="about bbg">
+        <div class="about-container box">
+            <div class="about-text">
+                <h2>關於我們</h2>
+                <div class="dec" style="background-color: #A600FF; height: 12px;width: 120px;"></div>
+                <p>FLUX 誕生於一個核心信念：頂級的電競體驗，需要由頂級的裝備來驅動。我們是一群深知 PC
+                    遊戲競技精髓的技術狂熱者和硬核玩家。我們厭倦了市面上徒有其表的「電競周邊」，因此決定打造一個專注於性能與極簡設計的平台。</p>
+                <a href="./about.html" class="btn">了解詳情</a>
+            </div>
+            <div class="about-img">
+                <img src="./image/index/about1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- 熱銷產品 -->
+    <section class="hot">
+        <div class="hot-container box">
+            <h2>熱銷產品</h2>
+            <!-- 輪播區塊 -->
+            <div class="hot-container swiper">
+                <div class="swiper-wrapper">
+                    <!-- 每個卡片 -->
+                    <article class="hot-item swiper-slide">
+                        <a href="#">
+                            <div class="hot-text">
+                                <h4>FLUX-G8</h4>
+                                <p>搭載專利 Hyper-Flow™ 零感無線系統</p>
+                            </div>
+                            <div class="hot-img">
+                                <img src="./image/index/g8.png" alt="">
+                            </div>
+                        </a>
+                    </article>
+                    <article class="hot-item swiper-slide">
+                        <a href="#">
+                            <div class="hot-text">
+                                <h4>ROGER-2486</h4>
+                                <p>重量減輕至僅 59 克，搭載 Hyper-Flow Lite 無線技術</p>
+                            </div>
+                            <div class="hot-img">
+                                <img src="./image/index/roger.png" alt="">
+                            </div>
+                        </a>
+                    </article>
+                    <article class="hot-item swiper-slide">
+                        <a href="#">
+                            <div class="hot-text">
+                                <h4>FLUX-C8763</h4>
+                                <p>200 小時以上續航力，多功能可編程側鍵和強化抗污塗層</p>
+                            </div>
+                            <div class="hot-img">
+                                <img src="./image/index/c8763.png" alt="">
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 Footer -->
+    <footer>
+        <div class="footer-container box">
+            <div class="log">
+                <img src="./image/common/footerlogo.png" alt="">
+            </div>
+            <div class="footer-text">
+                <p>FLUX | 脈動股份有限公司 <br>
+                (03) 3333-11111 | 桃園市中壢區復興路46號8樓</p>
+            </div>
+            <div class="footer-icons">
+                <a href="#" class="footer-icon"><img src="./image/common/ic_baseline-facebook.png" alt=""></a>
+                <a href="#" class="footer-icon"><img src="./image/common/ri_instagram-line.png" alt=""></a>
+                <a href="#" class="footer-icon"><img src="./image/common/mingcute_twitter-line.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        // direction: 'vertical',
+        // slidesPerView: 3,
+        speed: 500,
+        spaceBetween: 30,
+        // loop: true,
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+
+        coverflowEffect: {
+        rotate: 10,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+    </script>
+</body>
+
+</html>

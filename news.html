@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUX</title>
+    <link rel="stylesheet" href="./flux.css">
+    <style>
+        /* banner區塊 */
+        .banner{
+            background-image: url(./image/new/banner.png);
+            height: 320px;
+            margin-top: 90px;
+            position: relative;
+        }
+        .banner h1{
+            position: absolute;
+            left: 300px;
+            bottom: 30px;
+            
+        }
+
+        /* 內容區塊 */
+        .news{
+            padding: 100px 0;
+        }
+        .news-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 150px;
+        }
+        .new-item{
+            width: 400px;
+            transition: .3s;
+            /* padding: 10px; */
+        }
+        .new-item:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px 10px #ffffff25;
+        }
+        .new-img{
+            margin-bottom: 9px;
+        }
+        .new-text{
+            padding: 16px;
+        }
+        .new-text h5{
+            margin: 12px 0;
+        }
+
+        .page-bar{
+            width: fit-content;
+            margin: 100px auto 0;
+        }
+        .page-bar a{
+            padding: 16px;
+            /* background-color: #00FFFF; */
+        }
+        .page-bar a:hover{
+            color: #00FFFF;
+        }
+
+        .page-bar span{
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header導航 -->
+    <header>
+        <nav class="header-nav">
+            <a href="./index.html" class="logo">
+                <img src="./image/common/headerlogo.png" alt="">
+            </a>
+            <ul class='nav-list'>
+                <li><a href="#">產品瀏覽</a></li>
+                <li><a href="#">最新動態</a></li>
+                <li><a href="#">技術支援</a></li>
+                <li><a href="#">會員專區</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" id="uer-icon"><img src="./image/common/faUser.png" alt=""></a>
+                <a href="#" id="cart-icon"><img src="./image/common/cart.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner區塊 -->
+    <section class="banner">
+        <h1>最新消息</h1>
+    </section>
+
+    <!-- news區塊 -->
+    <section class="news">
+        <div class="news-container box">
+            <article class="new-item">
+                <a href="./newInner.html">
+                    <div class="new-img">
+                        <img src="./image/index/new-mouse.png" alt="">
+                    </div>
+                    <div class="new-text">
+                        <p class="time">2025/10/14</p>
+                        <h5>【極限解鎖】FLUX-G8 無線滑鼠：超越光速的零延遲體驗</h5>
+                        <p>滑鼠標誌性的人體工學外型設計現在比上一代產品更輕超過 25%，並搭載一系列先進技術，推動電競遊戲的極限。</p>
+                    </div>
+                </a>
+            </article>
+            <article class="new-item">
+                <a href="./newInner.html">
+                    <div class="new-img">
+                        <img src="./image/index/new-m.png" alt="">
+                    </div>
+                    <div class="new-text">
+                        <p class="time">2025/10/14</p>
+                        <h5>【核心升級】FLUX 驅動程式 V2.0發布：個人化戰術系統啟動</h5>
+                        <p>為了讓您的 FLUX 裝備發揮最大戰力，我們推出了全新的 FLUX 驅動程式 V2.0。本次更新帶來了高度個人化的 RGB 霓虹同步系統、進階的巨集編程介面，以及更精準的 DPI 校準工具</p>
+                    </div>
+                </a>
+            </article>
+            <article class="new-item">
+                <a href="./newInner.html">
+                    <div class="new-img">
+                        <img src="./image/index/new-person.png" alt="">
+                    </div>
+                    <div class="new-text">
+                        <p class="time">2025/10/14</p>
+                        <h5>【戰場宣言】FLUX 成為頂級電競戰隊官方指定裝備夥伴</h5>
+                        <p>FLUX 脈動正式宣布與知名電競戰隊 Cyber Zenith (CZ) 建立獨家電競裝備合作夥伴關係！CZ 戰隊的成員將在所有國際賽事中使用 FLUX 高性能電競滑鼠。</p>
+                    </div>
+                </a>
+            </article>
+            <article class="new-item">
+                <a href="./newInner.html">
+                    <div class="new-img">
+                        <img src="./image/index/new-mouse.png" alt="">
+                    </div>
+                    <div class="new-text">
+                        <p class="time">2025/10/14</p>
+                        <h5>【極限解鎖】FLUX-G8 無線滑鼠：超越光速的零延遲體驗</h5>
+                        <p>滑鼠標誌性的人體工學外型設計現在比上一代產品更輕超過 25%，並搭載一系列先進技術，推動電競遊戲的極限。</p>
+                    </div>
+                </a>
+            </article>
+            <article class="new-item">
+                <a href="./newInner.html">
+                    <div class="new-img">
+                        <img src="./image/index/new-m.png" alt="">
+                    </div>
+                    <div class="new-text">
+                        <p class="time">2025/10/14</p>
+                        <h5>【核心升級】FLUX 驅動程式 V2.0發布：個人化戰術系統啟動</h5>
+                        <p>為了讓您的 FLUX 裝備發揮最大戰力，我們推出了全新的 FLUX 驅動程式 V2.0。本次更新帶來了高度個人化的 RGB 霓虹同步系統、進階的巨集編程介面，以及更精準的 DPI 校準工具</p>
+                    </div>
+                </a>
+            </article>
+            <article class="new-item">
+                <a href="./newInner.html">
+                    <div class="new-img">
+                        <img src="./image/index/new-person.png" alt="">
+                    </div>
+                    <div class="new-text">
+                        <p class="time">2025/10/14</p>
+                        <h5>【戰場宣言】FLUX 成為頂級電競戰隊官方指定裝備夥伴</h5>
+                        <p>FLUX 脈動正式宣布與知名電競戰隊 Cyber Zenith (CZ) 建立獨家電競裝備合作夥伴關係！CZ 戰隊的成員將在所有國際賽事中使用 FLUX 高性能電競滑鼠。</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+        <div class="page-bar">
+            <a href="#"><span><</span></a>
+            <a href="#"><span>1</span></a>
+            <a href="#"><span>2</span></a>
+            <a href="#"><span>3</span></a>
+            <a href="#"><span>></span></a>
+        </div>
+    </section>
+    <!-- 頁尾 Footer -->
+    <footer>
+        <div class="footer-container box">
+            <div class="log">
+                <img src="./image/common/footerlogo.png" alt="">
+            </div>
+            <div class="footer-text">
+                <p>FLUX | 脈動股份有限公司 <br>
+                    (03) 3333-11111 | 桃園市中壢區復興路46號8樓</p>
+            </div>
+            <div class="footer-icons">
+                <a href="#" class="footer-icon"><img src="./image/common/ic_baseline-facebook.png" alt=""></a>
+                <a href="#" class="footer-icon"><img src="./image/common/ri_instagram-line.png" alt=""></a>
+                <a href="#" class="footer-icon"><img src="./image/common/mingcute_twitter-line.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
