@@ -86,7 +86,7 @@
         /* #endregion */
 
 
-                /* #region header區塊 */
+        /* #region header區塊 */
         header {
             background-color: #000;
             height: 90px;
@@ -111,8 +111,15 @@
             justify-content: center;
             gap: 28px;
         }
-
-        .nav-list li a {
+        .nav-li{
+            width: 140px;
+            height: 100%;
+            border-radius: 4px;
+            text-align: center;
+            line-height: 90px;
+            transition: .3s;
+        }
+        .nav-li .nav-a {
             display: block;
             width: 140px;
             height: 100%;
@@ -122,8 +129,35 @@
             line-height: 90px;
             transition: .3s;
         }
-
-        .nav-list li a:hover {
+        .nolink{
+            position: relative;
+        }
+        .nolink:hover{
+            background-color: #00FFFF;
+            color: #000;
+        }
+        .menu{
+            position: absolute;
+            top: 100%;
+            background-color: #fff;
+            transition: .3s;
+            height: 0;
+            /* height: 200px; */
+            overflow: hidden;
+            width: 200px;
+            text-align: start;
+        }
+        .nolink:hover .menu{
+            height: 180px;
+        }
+        .menu li a{
+            padding-left: 10px;
+            color: #000;
+        }
+        .menu li:hover{
+            background-color: #eee;
+        }
+        .nav-a:hover {
             background-color: #00FFFF;
             color: #000;
         }
