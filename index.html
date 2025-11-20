@@ -7,10 +7,12 @@
     <title>FLUX</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./flux.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         /* #region banner區塊 */
         .banner {
             margin-top: 90px;
+            /* width: 100%; */
             height: 740px;
             background-image: url(./image/index/banner.jpg);
             /* background-color: #00FFFF; */
@@ -183,7 +185,7 @@
 
     <!-- banner區塊 -->
     <section class="banner">
-        <div class="banner-content">
+        <div class="banner-content " data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine" data-aos-duration="1000">
             <h1>全新推出!! <br>FLUX-G8 無線滑鼠</h1>
             <p>結合超快速、低調的類比開關技術與非常纖薄的設計，在速度、舒適性和響應速度方面帶來全新突破。</p>
             <a href="./introduce.html" class="btn banner-btn">了解詳情</a>
@@ -244,14 +246,14 @@
     <!-- 關於我們 -->
     <section class="about bbg">
         <div class="about-container box">
-            <div class="about-text">
+            <div class="about-text" data-aos="fade-up" data-aos-duration="2000">
                 <h2>關於我們</h2>
                 <div class="dec" style="background-color: #A600FF; height: 12px;width: 120px;"></div>
                 <p>FLUX 誕生於一個核心信念：頂級的電競體驗，需要由頂級的裝備來驅動。我們是一群深知 PC
                     遊戲競技精髓的技術狂熱者和硬核玩家。我們厭倦了市面上徒有其表的「電競周邊」，因此決定打造一個專注於性能與極簡設計的平台。</p>
                 <a href="./about.html" class="btn">了解詳情</a>
             </div>
-            <div class="about-img">
+            <div class="about-img" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="./image/index/about1.png" alt="">
             </div>
         </div>
@@ -329,6 +331,8 @@
 
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {

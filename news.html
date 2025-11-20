@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLUX</title>
     <link rel="stylesheet" href="./flux.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         /* banner區塊 */
         .banner{
@@ -91,7 +92,7 @@
 
     <!-- banner區塊 -->
     <section class="banner">
-        <h1>最新消息</h1>
+        <h1 data-aos="zoom-out-left" data-aos-duration="1000">最新消息</h1>
     </section>
 
     <!-- news區塊 -->
@@ -195,6 +196,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
