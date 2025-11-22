@@ -1,0 +1,70 @@
+        /* banner區塊 */
+        .banner{
+            background-image: url(../image/new/banner.png);
+            height: 320px;
+            margin-top: 90px;
+            position: relative;
+        }
+        .banner h1{
+            position: absolute;
+            left: 300px;
+            bottom: 30px;
+            
+        }
+
+        /* 內容區塊 */
+        .news{
+            padding: 100px 0;
+        }
+        .news-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 50px;
+        }
+        .new-item{
+            width: 400px;
+            transition: .3s;
+            /* padding: 10px; */
+        }
+        .new-item:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px 10px #ffffff25;
+        }
+        .new-img{
+            height: 220px;
+            margin-bottom: 9px;
+            overflow: hidden;
+        }
+        .new-img img{
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover;
+            /* height: auto ; */
+        }
+        .new-text{
+            padding: 16px;
+        }
+        .new-text h5{
+            margin: 12px 0;
+        }
+
+        .page-bar{
+            width: fit-content;
+            margin: 100px auto 0;
+        }
+        .page-bar a{
+            background-color: #111;
+            border-radius: 4px;
+            padding: 10px 16px;
+            font-size: 24px;
+            font-weight: bold;
+            /* background-color: #00FFFF; */
+        }
+        .page-bar a.active{
+            background-color: #009999;
+        }
+        .page-bar a:hover{
+            color: #00FFFF;
+            
+        }

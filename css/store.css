@@ -1,0 +1,115 @@
+        /* #region banner */
+        .banner{
+            margin-top: 90px;
+            background-image: url(../image/store/banner.jpg);
+            height: 600px;
+            display: flex;
+            align-items: center;
+        }
+        .banner-text p{
+            margin-top: 20px;
+        }
+        /* #endregion */
+
+
+        /* #region store */
+        .store{
+            padding: 70px 0;
+        }
+        .store h2{
+            margin-bottom: 60px;
+        }
+        .store-container{
+            display: flex;
+            gap: 30px;
+            
+        }
+        .store-nav{
+            width: 300px;
+            flex-shrink: 0
+        }
+        .store-nav li{
+            border-bottom: 2px #D9D9D9 solid;
+            padding: 28px 0 12px 10px;
+            
+        }
+        .store-nav li:hover a{
+            color: #FF0066;
+        }
+        .store-content{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .store-content .item{
+            width: 315px;
+            position: relative;
+            margin-bottom: 50px;
+            transition: .3s;
+            /* overflow: hidden; */
+        }
+        .store-content .item:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px 10px #ffffff25;
+            
+        }
+        .item-text{
+            background-color: #191919;
+            padding: 16px;
+            border-radius: 0 0 10px 10px;
+        }
+        .item-text h4{
+            color: #FF0066;
+        }
+        .item-dec{
+            width: 46px;
+            height: 21px;
+            background-color: #00A613;
+            line-height: 21px;
+            text-align: center;
+            border-radius: 4px;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .wireless{
+            background-color: #6247F8;
+        }
+
+        .item-bottom{
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+        }
+        .item-bottom .btn{
+            font-size: 16px;
+            width: 117px;
+            height: 37px;
+            line-height: 30px;
+        }
+        .nt{
+            text-align: end;
+        }
+        .item-bottom h5{
+            font-size: 18px;
+        }
+        .item-bottom p{
+            font-size: 14px;
+            color: #B1ABAB;
+            text-decoration:line-through;
+        }
+
+        .nosale{
+            opacity: 0;
+        }
+        .sale{
+            width: 60px;
+            height: 45px;
+            background-color: #C00100;
+            border-radius: 0 0 25px 25px;
+            text-align: center;
+            line-height: 45px;
+            position: absolute;
+            top: -3px;
+            left: 16px;
+        }
+        /* #endregion */
