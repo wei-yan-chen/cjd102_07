@@ -1,6 +1,7 @@
         .banner{
             margin-top: 90px;
             background-image: url(../image/newinner/newinnerBg.png);
+            background-size: cover;
             height: 600px;
             /* width: 1920px; */
             position: relative;

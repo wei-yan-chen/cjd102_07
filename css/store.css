@@ -2,6 +2,7 @@
         .banner{
             margin-top: 90px;
             background-image: url(../image/store/banner.jpg);
+            background-size: cover;
             height: 600px;
             display: flex;
             align-items: center;

@@ -16,6 +16,24 @@
             gap: 25px;
             cursor: pointer;
         }
+        .small-img a{
+            height: 100px;
+            width: 100px;
+            border-radius: 4px;
+            /* box-sizing: border-box; */
+        }
+        .small-img a.active{
+            box-sizing: border-box;
+            border: #00FFFF 1px solid;
+        }
+        .small-img img{
+            width: 100%;
+            height: 100%;
+        }
+        .small-img a:hover{
+            box-sizing: border-box;
+            border: #00FFFF 1px solid;
+        }
         .product-introduce{
             display: flex;
             flex-direction: column;
@@ -117,7 +135,7 @@
 
         /* #region wireless */
         .wireless{
-            padding: 160px;
+            padding: 160px 0;
         }
         .wireless-box{
             display: flex;
@@ -134,27 +152,28 @@
 
         /* #region dpi */
         .dpi{
-            padding: 160px;
+            padding: 160px 0;
         }
         .dpi-box{
             display: flex;
             justify-content: space-between;
         }
         .dpi-text{
-            width: 650px;
+            width: 500px;
             display: flex;
             gap: 20px;
             flex-direction: column;
             justify-content: center;
         }
         .dpi-img{
-            transform: translateX(120px);
+            position: relative;
         }
+        
         /* #endregion */
 
         /* #region switch */
         .switch{
-            padding: 160px;
+            padding: 160px 0;
         }
         .switch-box{
             display: flex;
@@ -173,8 +192,8 @@
         /* #endregion */
 
         /* #region light */
-                .light{
-            padding: 160px;
+        .light{
+            padding: 160px 0;
         }
         .light-box{
             display: flex;

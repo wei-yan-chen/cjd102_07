@@ -1,6 +1,7 @@
         /* #region banner*/
         .banner {
             background-image: url(../image/about/aboutbanner.jpg);
+            background-size: cover;
             height: 850px;
             margin-top: 90px;
             position: relative;
@@ -50,6 +51,7 @@
         /* #region intro*/
         .intro {
             background-image: url(../image/about/bg.jpg);
+            background-size: cover;
             height: 980px;
             text-align: center;
             position: relative;

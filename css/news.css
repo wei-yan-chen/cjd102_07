@@ -1,6 +1,7 @@
         /* banner區塊 */
         .banner{
             background-image: url(../image/new/banner.png);
+            background-size: cover;
             height: 320px;
             margin-top: 90px;
             position: relative;

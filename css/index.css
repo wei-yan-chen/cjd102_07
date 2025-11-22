@@ -1,16 +1,17 @@
         /* #region banner區塊 */
         .banner {
             margin-top: 90px;
-            /* width: 100%; */
+            width: 100%;
             height: 740px;
             background-image: url(../image/index/banner.jpg);
             /* background-color: #00FFFF; */
+            background-size: cover;
             display: flex;
             align-items: center;
         }
 
         .banner-content {
-            margin-left: 480px;
+            margin-left: 300px;
         }
 
         .banner-content p {

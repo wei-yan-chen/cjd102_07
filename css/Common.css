@@ -133,12 +133,13 @@
             position: relative;
         }
         .nolink:hover{
-            background-color: #00FFFF;
-            color: #000;
+            /* background-color: #00FFFF; */
+            color: #FF0066;
         }
         .menu{
             position: absolute;
             top: 100%;
+            left: 20px;
             background-color: #fff;
             transition: .3s;
             height: 0;
@@ -152,7 +153,7 @@
         }
         .menu li a{
             display: block;
-            padding-left: 10px;
+            padding-left: 20px;
             color: #000;
             line-height: 60px;
         }
@@ -160,8 +161,8 @@
             background-color: #eee;
         }
         .nav-a:hover {
-            background-color: #00FFFF;
-            color: #000;
+            /* background-color: #00FFFF; */
+            color: #FF0066;
         }
 
         .nav-icons {

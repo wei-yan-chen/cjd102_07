@@ -54,7 +54,7 @@
                     <img src="./image/introduce/large0.png" alt="">
                 </div>
                 <div class="small-img">
-                    <a>
+                    <a class="active">
                         <img src="./image/introduce/small1.png" alt="" data-idx="0">
                     </a>
                     <a>
@@ -106,15 +106,15 @@
             <div class="intro-cards" >
                 <div class="intro-card" data-aos="zoom-in-down">
                     <img src="./image/introduce/wifi.svg" alt="">
-                    <p data-aos="flip-up" data-aos-duration="3000">靈敏度 26,000DPI</p>
+                    <p data-aos="flip-up" data-aos-duration="2000">靈敏度 26,000DPI</p>
                 </div>
                 <div class="intro-card" data-aos="zoom-in-down" data-aos-duration="500">
                     <img src="./image/introduce/memory.svg" alt="">
-                    <p data-aos="flip-up" data-aos-duration="3000">微動 8000 萬次壽命</p>
+                    <p data-aos="flip-up" data-aos-duration="2000">微動 8000 萬次壽命</p>
                 </div>
                 <div class="intro-card" data-aos="zoom-in-down" data-aos-duration="1000">
                     <img src="./image/introduce/mouse.svg" alt="">
-                    <p data-aos="flip-up" data-aos-duration="3000">重量 68 克</p>
+                    <p data-aos="flip-up" data-aos-duration="2000">重量 68 克</p>
                 </div>
             </div>
         </div>
@@ -126,7 +126,7 @@
             <div class="wireless-img">
                 <img src="./image/introduce/wireless.png" alt="">
             </div>
-            <div class="wireless-text" data-aos="fade-left" data-aos-duration="3000">
+            <div class="wireless-text" data-aos="fade-left" data-aos-duration="2000">
                 <h2>Hyper-Flow 零感無線：有線般的極速響應</h2>
                 <p>告別無線延遲的惡夢。FLUX 專利的 Hyper-Flow 無線傳輸系統，專為競技而生。透過優化的頻譜跳躍技術和精密算法，我們將傳輸延遲壓縮至業界極限的小於 1 毫秒。無論是複雜多裝置的比賽現場，或是個人戰鬥空間，Hyper-Flow 都能確保您的指令與遊戲動作即時同步，提供絕對可靠的連線品質。</p>
             </div>
@@ -136,7 +136,7 @@
      <!-- 介紹dpi -->
       <section class="dpi bbg">
         <div class="dpi-box box">
-            <div class="dpi-text" data-aos="fade-right" data-aos-duration="3000">
+            <div class="dpi-text" data-aos="fade-right" data-aos-duration="2000">
                 <h2>FLUX-Sensor V2.0：像素級追蹤，無懈可擊</h2>
                 <p>真實 26,000 DPI： 提供無與倫比的 DPI 範圍，配合像素級 1:1 追蹤，無論在任何螢幕解析度或遊戲情境，你的瞄準都將毫無偏差。<br>
                 動作線性度優化： 內建先進校準演算法，消除高速移動下的追蹤失真，確保你的手腕微操，能百分之百地精準映射。</p>
@@ -153,7 +153,7 @@
                 <div class="switch-img">
                     <img src="./image/introduce/switch.png" alt="">
                 </div>
-                <div class="switch-text" data-aos="fade-left" data-aos-duration="2500">
+                <div class="switch-text" data-aos="fade-left" data-aos-duration="2000">
                     <h2>FLUX-Switch 瞬發微動：堅實回饋，瞬息觸發</h2>
                     <p> 8000 萬次壽命： 提供超凡的耐用性，承受最激烈的連點考驗。<br>
                         清脆觸感，極短行程： 提供完美的回饋感和瞬發觸發，讓你精確掌控每一次攻擊與技能施放。</p>
@@ -193,41 +193,11 @@
     </footer>
 
 
-
-
-    <script>
-
-        // 選取value容器
-        const valueEl = document.querySelector('.value');
-        // 設定變數 預設為1
-        let value = 1;
-        // 選-加click事件
-        document.querySelector('.minus').onclick = () => {
-            // 判斷如果大於1就-1
-            value > 1 ? value-- : value
-            // 附值給value容器
-            valueEl.textContent = value;
-        };
-
-        document.querySelector('.plus').onclick = () => {
-            // 判斷如果小於20就-1
-            value < 20 ? value++ : value
-            // 附值給value容器
-            valueEl.textContent = value;
-        };
-
-
-        
-        const small=document.querySelector('.small-img')
-        small.addEventListener('click',function(e){
-            // console.dir(e.target);
-            if (e.target.tagName==='IMG') {
-                document.querySelector('.large-img img').src=`./image/introduce/large${e.target.dataset.idx}.png`
-            }
-        })
-        
-    </script>
-
+    <!-- 換圖功能 -->
+    <script src="./js/changeimg.js"></script>
+    <!-- 購買數量功能 -->
+    <script src="./js/purchase-quantity.js"></script>
+    <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
 </body>

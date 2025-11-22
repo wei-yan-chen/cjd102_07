@@ -1,5 +1,6 @@
         .bg{
             background-image: url(../image/account/bg.jpg);
+            background-size: cover;
             height: 589px;
             margin-top: 90px;
             margin-bottom: 216px;
