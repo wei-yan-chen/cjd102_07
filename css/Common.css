@@ -60,7 +60,7 @@
 
         img {
             display: block;
-            border-radius: 4px;
+            /* border-radius: 4px; */
             
         }
 
@@ -95,6 +95,15 @@
             top: 0;
             left: 0;
             z-index: 99;
+        }
+
+        header .logo{
+            /* width: 100px; */
+            height: 60px;
+        }
+        header .logo img{
+            height: 100%;
+            /* width: 100%; */
         }
 
         .header-nav {
