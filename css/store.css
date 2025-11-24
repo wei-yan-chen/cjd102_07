@@ -3,6 +3,7 @@
             margin-top: 90px;
             background-image: url(../image/store/banner.jpg);
             background-size: cover;
+            background-position: center;
             height: 600px;
             display: flex;
             align-items: center;
@@ -25,6 +26,7 @@
             gap: 30px;
             
         }
+        /* -----------左邊分類--------- */
         .store-nav{
             width: 300px;
             flex-shrink: 0
@@ -34,30 +36,50 @@
             padding: 28px 0 12px 10px;
             
         }
+        .store-nav li a{
+            /* height: 100%; */
+            display: block;
+        }
         .store-nav li:hover a{
             color: #FF0066;
         }
+
         .store-content{
             display: flex;
-            justify-content: space-between;
+            /* justify-content: space-between; */
+            gap: 20px;
             flex-wrap: wrap;
         }
+
+        /* -------------每個卡片---------- */
         .store-content .item{
             width: 315px;
             position: relative;
             margin-bottom: 50px;
             transition: .3s;
-            /* overflow: hidden; */
+            overflow: hidden;
+            border-radius: 10px;
         }
         .store-content .item:hover{
-            transform: translateY(-10px);
-            box-shadow: 0 0 20px 10px #ffffff25;
+            box-shadow: 0 0 10px 5px #ffffff25;
             
         }
+        .item .item-img{
+            overflow: hidden;
+        }
+        .store-content .item img{
+            transition: .3s;
+        }
+        .store-content .item:hover img{
+            transform: scale(1.1);
+            /* scale: 1.1; */
+        }
         .item-text{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
             background-color: #191919;
             padding: 16px;
-            border-radius: 0 0 10px 10px;
         }
         .item-text h4{
             color: #FF0066;
@@ -70,17 +92,12 @@
             text-align: center;
             border-radius: 4px;
             font-size: 14px;
-            margin: 10px 0;
+            margin-top: 10px;
         }
-        .wireless{
+        .wireless-color{
             background-color: #6247F8;
         }
 
-        .item-bottom{
-            display: flex;
-            align-items: end;
-            justify-content: space-between;
-        }
         .item-bottom .btn{
             font-size: 16px;
             width: 117px;
@@ -88,12 +105,13 @@
             line-height: 30px;
         }
         .nt{
+            /* flex-shrink: 0; */
             text-align: end;
         }
-        .item-bottom h5{
+        .nt h5{
             font-size: 18px;
         }
-        .item-bottom p{
+        .nt p{
             font-size: 14px;
             color: #B1ABAB;
             text-decoration:line-through;
