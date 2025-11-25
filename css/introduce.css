@@ -9,6 +9,44 @@
             position: relative;
             justify-content: space-between;
         }
+        .large-img{
+            height: 600px;
+            width: 600px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .large-img img{
+            height: 100%;
+        }
+        .magnifier{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(100, 100, 100, 0.3);
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            display: none;
+            /* 不加會有bug */
+            pointer-events:none
+        }
+        .showImg{
+            background-image: url(../image/introduce/large0.png);
+            background-size: 1800px 1800px;
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            top: 0;
+            left: 620px;
+            border-radius: 10px;
+            display: none;
+        }
+        .large-img:hover .showImg{
+            display: block;
+        }
+        .large-img:hover .magnifier{
+            display: block;
+        }
         .small-img{
             position: absolute;
             bottom: -125px;

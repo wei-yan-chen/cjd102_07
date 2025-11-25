@@ -38,6 +38,7 @@
         }
         .store-nav li a{
             /* height: 100%; */
+            cursor: pointer;
             display: block;
         }
         .store-nav li:hover a{
