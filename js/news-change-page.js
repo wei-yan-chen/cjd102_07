@@ -124,26 +124,43 @@
 
         // 更換不同頁渲染新聞的函數
         function changePage(arr) {
-            let html = ''
-            // 使用for迴圈把數據放到一個變數裡
-            for (let i = 0; i < arr.length; i++) {
-                let obj = arr[i]
-                html+=`
-                <article class="new-item">
+            // let html = ''
+            // 改用map加join寫法
+            let newArr = arr.map((n)=>{
+                return `<article class="new-item">
                 <a href="./newInner.html">
                     <div class="new-img">
-                        <img src="${obj.src}" alt="">
+                        <img src="${n.src}" alt="">
                     </div>
                     <div class="new-text">
-                        <p class="time">${obj.time}</p>
-                        <h5>${obj.h5}</h5>
-                        <p class="text">${obj.p}</p>
+                        <p class="time">${n.time}</p>
+                        <h5>${n.h5}</h5>
+                        <p class="text">${n.p}</p>
                     </div>
                 </a>
                 </article>`
-            }
+            })
+            // for寫法
+            // 使用for迴圈把數據放到一個變數裡
+            // for (let i = 0; i < arr.length; i++) {
+            //     let obj = arr[i]
+            //     html+=`
+            //     <article class="new-item">
+            //     <a href="./newInner.html">
+            //         <div class="new-img">
+            //             <img src="${obj.src}" alt="">
+            //         </div>
+            //         <div class="new-text">
+            //             <p class="time">${obj.time}</p>
+            //             <h5>${obj.h5}</h5>
+            //             <p class="text">${obj.p}</p>
+            //         </div>
+            //     </a>
+            //     </article>`
+            // }
             // 渲染整個頁面
-            newsContainer.innerHTML=html
+            // newsContainer.innerHTML=html
+            newsContainer.innerHTML=newArr.join('')
         }
         
         // 案左函數
