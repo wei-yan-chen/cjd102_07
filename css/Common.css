@@ -1,4 +1,7 @@
-        * {
+@import url(./header.css);
+@import url(./footer.css);
+
+* {
             padding: 0;
             margin: 0;
             /* background-color: #333; */
@@ -14,7 +17,6 @@
             /* position: relative; */
         }
         
-
         .box {
             width: 1320px;
             margin: 0 auto;
@@ -83,121 +85,11 @@
             background-color: #00FFFF;
         }
 
-        /* #endregion */
 
-
-        /* #region header區塊 */
-        header {
-            background-color: #000;
-            height: 90px;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 99;
-        }
-
-        header .logo{
-            /* width: 100px; */
-            height: 40px;
-        }
-        header .logo img{
-            height: 100%;
-            /* width: 100%; */
-        }
-
-        .header-nav {
-            margin: 0 70px;
-            height: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-list {
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 28px;
-        }
-        .nav-li{
-            width: 140px;
-            height: 100%;
-            /* border-radius: 4px; */
-            text-align: center;
-            line-height: 90px;
-            transition: .3s;
-        }
-        .nav-li .nav-a {
-            display: block;
-            width: 140px;
-            height: 100%;
-            /* background-color: #00FFFF; */
-            /* border-radius: 4px; */
-            text-align: center;
-            line-height: 90px;
-            transition: .3s;
-        }
-        .nolink{
-            position: relative;
-        }
-        .nolink:hover{
-            /* background-color: #00FFFF; */
-            color: #FF0066;
-        }
-        .menu{
-            position: absolute;
-            top: 100%;
-            left: 20px;
-            background-color: #fff;
-            transition: .3s;
-            height: 0;
-            /* height: 200px; */
-            overflow: hidden;
-            width: 200px;
-            text-align: start;
-        }
-        .nolink:hover .menu{
-            height: 120px;
-        }
-        .menu li a{
-            display: block;
-            padding-left: 20px;
-            color: #000;
-            line-height: 60px;
-        }
-        .menu li:hover{
-            background-color: #eee;
-        }
-        .nav-a:hover {
-            /* background-color: #00FFFF; */
-            color: #FF0066;
-        }
-
-        .nav-icons {
-            display: flex;
-        }
-
-        .nav-icons #uer-icon {
-            margin-right: 50px;
-        }
 
         /* #endregion */
 
 
-                /* #region footer */
-        footer{
-            height: 115px;
-            width: 100%;
-            background-color: #000;
-        }
-        .footer-container{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .footer-icons{
-            display: flex;
-            gap: 23px;
-        }
-         /* #endregion */
+        
+
+

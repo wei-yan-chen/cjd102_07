@@ -1,0 +1,270 @@
+/* #region header區塊 */
+header {
+    background-color: #000;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.header-nav {
+    margin: 0 70px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.show1{
+    display: none !important;
+    /* background-color: #fff; */
+}
+
+/* 漢堡 */
+.left-nav{
+    display: none;
+}
+.hb {
+    width: 80px;
+    height: 80px;
+    border: 1px solid red;
+    position: relative;
+    display: block;
+}
+.hb span {
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    left: 0;
+    right: 0;
+    background-color: #fa0;
+    margin: auto;
+    transition: .3s;
+}
+.hb .bar1 {
+    top: 27px;
+    rotate: 0deg;
+    transition: top .3s .3s, rotate .3s 0s;
+}
+.hb .bar2 {
+    top: 39px;
+    opacity: 1;
+}
+.hb .bar3 {
+    top: 51px;
+    rotate: 0deg;
+    transition: top .3s .3s, rotate .3s 0s;
+}
+
+.hb:has(:checked) .bar2 {
+    opacity: 0;
+}
+.hb:has(:checked) .bar1 {
+    top: 39px;
+    rotate: 45deg;
+    transition: top .3s 0s, rotate .3s .3s;
+}
+.hb:has(:checked) .bar3 {
+    top: 39px;
+    rotate: -225deg;
+    transition: top .3s 0s, rotate .3s .3s;
+}
+
+.hb input{
+    display: none;
+}
+
+
+/* logo */
+header .logo{
+    /* width: 100px; */
+    height: 40px;
+}
+header .logo img{
+    height: 100%;
+    /* width: 100%; */
+}
+
+
+/* 中間清單 */
+.nav-list {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* transition: .3s; */
+}
+.nav-li{
+    width: 140px;
+    height: auto;
+    /* border-radius: 4px; */
+    text-align: center;
+    line-height: 90px;
+    transition: .3s;
+}
+.nav-li .nav-a {
+    display: block;
+    width: 140px;
+    height: 100%;
+    /* background-color: #00FFFF; */
+    /* border-radius: 4px; */
+    text-align: center;
+    line-height: 90px;
+    transition: .3s;
+}
+.nolink{
+    position: relative;
+}
+.menu-label{
+    display: block;
+    cursor: pointer;
+    height: 100%
+}
+.menu-label input{
+    display: none;
+}
+.nolink:hover{
+    /* background-color: #00FFFF; */
+    color: #FF0066;
+}
+.menu{
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    background-color: #fff;
+    transition: .3s;
+    height: 0;
+    /* height: 200px; */
+    overflow: hidden;
+    width: 200px;
+    text-align: start;
+}
+.nolink:hover .menu{
+    height: 120px;
+}
+.menu li a{
+    display: block;
+    padding-left: 20px;
+    color: #000;
+    line-height: 60px;
+}
+.menu li:hover{
+    background-color: #eee;
+}
+.nav-a:hover {
+    /* background-color: #00FFFF; */
+    color: #FF0066;
+}
+
+
+
+.nav-icons {
+    display: flex;
+}
+
+.nav-icons #uer-icon {
+    margin-right: 50px;
+}
+
+/* #endregion */
+
+
+@media screen and (max-width: 1024px){
+    .show1{
+        display: block !important;
+    }
+    
+    .nav-list{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 85%;
+        background-color: #fff;
+        color: #000;
+        transition: .3s;
+        /* overflow: hidden; */
+    }
+    .nav-list .nav-li:last-child{
+        border-bottom: #8b8b8b 1px solid;
+    }
+    .nav-list .nav-li:first-child{
+        margin-top: 50px;
+        /* border-top: #8b8b8b 1px solid; */
+    }
+    .left-nav:has(:checked)~.nav-list{
+        left: 0;
+    }
+    .nav-li{
+        width: 100%;
+        /* background-color: red; */
+    }
+    .nav-li>.nav-a{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 30px;
+        /* vertical-align:middle; */
+    }
+    .nav-list a{
+        color: #000;
+    }
+    .menu{
+        position: static; /* 取消定位 */
+        top: unset;
+        left: unset;
+        width: 100%;
+        /* height: 120px; */
+    }
+    .nolink .menu-label{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 30px;
+        flex-wrap: wrap;
+    }
+    .nolink:hover .menu{
+        height:0;
+    }
+    .menu-label input:checked~.menu{
+        height: 120px;
+    }
+    .menu-label .add{
+        width: 24px;
+        height: 24px;
+        position: relative;
+        /* border: #000 1px solid; */
+    }
+    .add span{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:10px;
+        margin: auto;
+        display: block;
+        width: 50%;
+        height: 2px;
+        background-color: #000;
+        transition: .3s;
+    }
+    .menu-label input:checked+.add .add-bar1{
+        rotate: 360deg;
+    }
+    .add .add-bar1{
+        rotate: 90deg;
+    }
+
+    .menu li a{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .left-nav{
+    display: block;
+}
+}
