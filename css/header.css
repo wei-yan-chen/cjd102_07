@@ -88,6 +88,9 @@ header .logo img{
 
 
 /* 中間清單 */
+.nav-box{
+    height: 100%;
+}
 .nav-list {
     height: 100%;
     display: flex;
@@ -175,7 +178,7 @@ header .logo img{
         display: block !important;
     }
     
-    .nav-list{
+    .nav-box{
         display: block;
         position: fixed;
         top: 0;
@@ -186,6 +189,9 @@ header .logo img{
         transition: .3s;
         /* overflow: hidden; */
     }
+    .nav-list{
+        display: block;
+    }
     .nav-list .nav-li:last-child{
         border-bottom: #8b8b8b 1px solid;
     }
@@ -193,7 +199,7 @@ header .logo img{
         margin-top: 50px;
         /* border-top: #8b8b8b 1px solid; */
     }
-    .left-nav:has(:checked)~.nav-list{
+    .left-nav:has(:checked)~.nav-box{
         left: 0;
     }
     .nav-li{
