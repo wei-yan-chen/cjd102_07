@@ -8,6 +8,16 @@ header {
     left: 0;
     z-index: 99;
 }
+/* 圖標 */
+.material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 40
+}
+
+
 .header-nav {
     margin: 0 70px;
     height: 100%;
@@ -17,7 +27,6 @@ header {
 }
 .show1{
     display: none !important;
-    /* background-color: #fff; */
 }
 
 /* 漢堡 */
@@ -27,23 +36,22 @@ header {
 .hb {
     width: 80px;
     height: 80px;
-    border: 1px solid red;
     position: relative;
     display: block;
 }
 .hb span {
     display: block;
     position: absolute;
-    width: 80%;
-    height: 2px;
+    width: 60%;
+    height: 3px;
     left: 0;
     right: 0;
-    background-color: #fa0;
+    background-color: #fff;
     margin: auto;
     transition: .3s;
 }
 .hb .bar1 {
-    top: 27px;
+    top: 25px;
     rotate: 0deg;
     transition: top .3s .3s, rotate .3s 0s;
 }
@@ -52,25 +60,27 @@ header {
     opacity: 1;
 }
 .hb .bar3 {
-    top: 51px;
+    top: 53px;
     rotate: 0deg;
     transition: top .3s .3s, rotate .3s 0s;
 }
-
 .hb:has(:checked) .bar2 {
     opacity: 0;
 }
 .hb:has(:checked) .bar1 {
+    background-color: #000;
     top: 39px;
     rotate: 45deg;
     transition: top .3s 0s, rotate .3s .3s;
+    height: 2px;
 }
 .hb:has(:checked) .bar3 {
+    background-color: #000;
     top: 39px;
     rotate: -225deg;
     transition: top .3s 0s, rotate .3s .3s;
+    height: 2px;
 }
-
 .hb input{
     display: none;
 }
@@ -177,13 +187,16 @@ header .logo img{
     .show1{
         display: block !important;
     }
+    .header-nav{
+        margin: 0 30px 0 10px;
+    }
     
     .nav-box{
         display: block;
         position: fixed;
         top: 0;
         left: -100%;
-        width: 85%;
+        width: 100%;
         background-color: #fff;
         color: #000;
         transition: .3s;
@@ -193,11 +206,11 @@ header .logo img{
         display: block;
     }
     .nav-list .nav-li:last-child{
-        border-bottom: #8b8b8b 1px solid;
+        border-bottom: #ececec 1px solid;
     }
     .nav-list .nav-li:first-child{
-        margin-top: 50px;
-        /* border-top: #8b8b8b 1px solid; */
+        margin-top: 90px;
+        border-top: #ececec 1px solid;
     }
     .left-nav:has(:checked)~.nav-box{
         left: 0;
@@ -213,7 +226,6 @@ header .logo img{
         justify-content: space-between;
         width: 100%;
         padding: 0 30px;
-        /* vertical-align:middle; */
     }
     .nav-list a{
         color: #000;
@@ -223,7 +235,6 @@ header .logo img{
         top: unset;
         left: unset;
         width: 100%;
-        /* height: 120px; */
     }
     .nolink .menu-label{
         box-sizing: border-box;
@@ -272,5 +283,8 @@ header .logo img{
     }
     .left-nav{
     display: block;
+    position: relative;
+    z-index: 99;
 }
+    
 }
