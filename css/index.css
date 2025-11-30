@@ -191,9 +191,6 @@ padding-bottom: 70px;
             /* width: 100%; */
             /* background-color: #fff; */
         }
-        .about-img img{
-            /* width: 100%; */
-        }
         .swiper-button-prev , .swiper-button-next{
             display: none;
         }
@@ -209,7 +206,7 @@ padding-bottom: 70px;
         .banner-content p{
             width: 82%;
         }
-
+        
         .new-item ~.new-item{
             display: none;
         }
