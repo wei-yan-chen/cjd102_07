@@ -1,0 +1,73 @@
+.container{
+    margin: 120px auto;
+    background-color: #000;
+    width: 600px;
+    padding: 40px 0;
+}
+.title{
+    text-align: center;
+}
+.container form{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.container .input-label{
+    display: block;
+    width: 80%;
+    position: relative;
+}
+
+.material-symbols-outlined{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
+.input-label input{
+    border: 1px #8a8a8a solid;
+    margin: auto;
+    padding-left: 10px;
+    height: 48px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+.container input::placeholder{
+    color: #fff;
+}
+
+form label:last-of-type{
+    margin-left: 10%;
+    /* width: 80%; */
+    align-self: start;
+    display: flex;
+    gap: 5px;
+}
+.container .check{
+    /* display: block; */
+    width: 20px;
+    /* height: 20px; */
+}
+.other{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.other-icons{
+    display: flex;
+    gap: 40px;
+}
+.other-icons .icon{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    /* border: 2px #00FFFF solid; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer;
+}
