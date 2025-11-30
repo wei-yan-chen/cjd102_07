@@ -2,94 +2,110 @@
 @import url(./footer.css);
 
 * {
-            padding: 0;
-            margin: 0;
-            /* background-color: #333; */
-        }
+    padding: 0;
+    margin: 0;
+    /* background-color: #333; */
+}
 
-        /* #region 統一樣式 */
-        body {
-            font-family: "Noto Sans TC", sans-serif;
-            background-image: url(../image/common/bg.png);
-            color: #fff;
-            line-height: 1.5;
-            letter-spacing: 0.1rem;
-            /* position: relative; */
-        }
+/* #region 統一樣式 */
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    background-image: url(../image/common/bg.png);
+    color: #fff;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    /* position: relative; */
+}
+
+.box {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.bbg{
+    background-color: #1d1d1d7e;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 60px;
+    color: #FF0066;
+}
+
+h2 {
+    font-size: 40px;
+    color: #FF0066;
+}
+h3{
+    font-size: 32px;
+}
+h4{
+    font-size: 24px;
+}
+h5 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+img {
+    display: block;
+    /* border-radius: 4px; */
+    
+}
+
+.btn {
+    box-sizing: border-box;
+    display: block;
+    width: 158px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 44px;
+    text-align: center;
+    border: #00FFFF 3px solid;
+    color: #00FFFF;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #00FFFF;
+}
+
+
+
+/* #endregion */
+
+
         
-        .box {
-            width: 1320px;
-            margin: 0 auto;
-        }
-
-        .bbg{
-            background-color: #1d1d1d7e;
-        }
-
-        a {
-            text-decoration: none;
-            color: #fff;
-            
-        }
-
-        li {
-            list-style: none;
-        }
-
-        h1 {
-            font-size: 50px;
-            line-height: 60px;
-            color: #FF0066;
-        }
-
-        h2 {
-            font-size: 40px;
-            color: #FF0066;
-        }
-        h3{
-            font-size: 32px;
-        }
-        h4{
-            font-size: 24px;
-        }
-        h5 {
-            font-size: 20px;
-        }
-
-        p {
-            font-size: 16px;
-        }
-
-        img {
-            display: block;
-            /* border-radius: 4px; */
-            
-        }
-
-        .btn {
-            box-sizing: border-box;
-            display: block;
-            width: 158px;
-            height: 50px;
-            font-size: 20px;
-            line-height: 44px;
-            text-align: center;
-            border: #00FFFF 3px solid;
-            color: #00FFFF;
-            border-radius: 4px;
-            transition: .3s;
-        }
-
-        .btn:hover {
-            color: #000;
-            background-color: #00FFFF;
-        }
 
 
-
-        /* #endregion */
-
-
-        
-
-
+@media screen and (max-width: 1400px){
+    .box{
+        width: 1000px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .box{
+        width: 90vw;
+    }
+    h1 {
+    font-size: 40px;
+}
+    h2 {
+    font-size: 32px;
+}
+}
