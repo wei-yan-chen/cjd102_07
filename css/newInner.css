@@ -1,53 +1,94 @@
-        .banner{
-            margin-top: 90px;
-            background-image: url(../image/newinner/newinnerBg.png);
-            background-size: cover;
-            height: 600px;
-            /* width: 1920px; */
-            position: relative;
-            margin-bottom: 200px;
-        }
-        .banner img{
-            position: absolute;
-            margin: auto;
-            left: 0;
-            right: 0;
-            top: 100px;
-            /* bottom: 0; */
-            /* background-color: red; */
-        }
+.banner{
+    margin-top: 90px;
+    background-image: url(../image/newinner/newinnerBg.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    /* width: 1920px; */
+    position: relative;
+    margin-bottom: 200px;
+}
+.banner img{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
+    /* bottom: 0; */
+    /* background-color: red; */
+}
 
-        .new-title{
-            position: relative;
-            width: 720px;
-            margin: auto;
-            margin-bottom: 70px;
-        }
-        .new-title p{
-            position: absolute;
-            right: -180px;
-            top: -40px;
-        }
+.new-title{
+    position: relative;
+    width: 720px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+.new-title p{
+    position: absolute;
+    right: -180px;
+    top: -40px;
+}
 
-        .new-text{
-            margin: 0 auto 60px;
-            display: flex;
-            flex-direction: column;
-            /* align-items: center; */
-            width: 644px;
-            gap: 46px;
-        }
-        .new-text img{
-            width: 644px;
-        }
-        .new-text h4{
-            color: #FF0066;
-        }
-        .new-container .btn{
-            margin: auto;
-            width: 270px;
-            margin-bottom: 90px;
-        }
-        .new-text ul li{
-            list-style:square;
-        }
+.new-text{
+    margin: 0 auto 60px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 644px;
+    gap: 46px;
+}
+.new-text img{
+    width: 644px;
+}
+.new-text h4{
+    color: #FF0066;
+}
+.new-container .btn{
+    margin: auto;
+    width: 270px;
+    margin-bottom: 90px;
+}
+.new-text ul li{
+    list-style:square;
+}
+
+@media screen and (max-width: 1400px){
+    .banner img{
+        top: 100px;
+        width: 1000px;
+    }
+    .new-title p{
+        right: -140px;
+        top: -40px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .banner{
+        height: 320px;
+        background-image: url(../image/newinner/gamer.png);
+        margin-bottom: 100px;
+    }
+    .banner img{
+        display: none;
+    }
+    .new-title p{
+        right: 0px;
+        top: -40px;
+    }
+}
+@media screen and (max-width: 768px){
+    .new-container{
+        margin: auto;
+        width: 90vw;
+    }
+    .new-title{
+        width: 100%;
+    }
+    .new-text{
+        width: 100%;
+    }
+    .new-text img{
+        width: 100%;
+    }
+}
