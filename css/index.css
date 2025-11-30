@@ -166,21 +166,28 @@ padding-bottom: 70px;
         }
         .about{
             position: relative;
+            /* background-color:unset; */
+            background-image: url(../image/index/about1.png);
+            background-position: center;
+            background-size: cover;
         }
         .about-text{
             position: absolute;
             width: 90%;
             margin:0 auto;
+            padding: 0;
         }
         .about-container{
-            width: 100%;
+            /* width: 100%; */
+            height: 600px;
         }
         .about-img{
-            width: 100%;
+            display: none;
+            /* width: 100%; */
             /* background-color: #fff; */
         }
         .about-img img{
-            width: 100%;
+            /* width: 100%; */
         }
     }
     @media screen and (max-width: 768px){
