@@ -113,25 +113,17 @@
             text-align: start;
         }
 
-        .location h3 {
+        .location h4 {
             color: #FF0066;
-            font-size: 32px;
-            margin-bottom: 32px;
+            /* font-size: 32px; */
+            margin-bottom: 10px;
         }
         /* #endregion */
 
 
         /* #region 表單 */
-        .form-section{
-            padding: 140px 0;
-            /* display: flex; */
-            /* justify-content: center; */
-
-        }
-        .form-section h1{
-            text-align: center;
-        }
         .form-container {
+            box-sizing: border-box;
             margin: auto;
             background-color: #7D7D7D;
             /* width: 1370px; */
@@ -139,19 +131,29 @@
             border: #fff solid 1px;
             padding: 30px;
         }
+        .form-section{
+            padding: 140px 0;
+        }
+        .form-section h2{
+            text-align: center;
+        }
+        
 
         .form {
-            padding: 30px 0;
+            padding: 10px 0 30px 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            gap: 24px 0;
+            gap: 20px 0;
         }
-
-        input {
+        .form label{
+            width: 48%;
+        }
+        .form-container input {
             /* margin-top: 9px; */
-            width: 630px;
-            height: 50px;
+            /* width: 600px; */
+            width: 100%;
+            height: 42px;
             box-sizing: border-box;
             font-size: 20px;
             padding-left: 10px;
@@ -160,7 +162,12 @@
             letter-spacing: 0.1rem;
         }
 
-        label textarea {
+        #address{
+            width: 100%;
+            /* border: #FF0066 1px solid; */
+        }
+        #address textarea {
+            box-sizing: border-box;
             width: 100%;
             padding: 10px;
             resize: none;
@@ -171,11 +178,51 @@
         }
 
         label p {
-            margin-bottom: 9px;
-            font-size: 20px;
+            margin-bottom: 6px;
+            font-size: 16px;
         }
         .form-container .btn{
             margin: auto;
         }
 
         /* #endregion */
+
+
+        @media screen and (max-width: 1024px){
+            .form-container input{
+                font-size: 16px;
+            }
+        }
+        @media screen and (max-width: 900px){
+            .contact>p{
+                width: 80%;
+                margin:30px auto 60px ;
+            }
+            .contact-container{
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 100px;
+            }
+            .contact-container .decline{
+                display: none;
+            }
+            .location{
+                flex-direction: column;
+                gap: 20px;
+            }
+            .location .text{
+                text-align: center;
+                order: 2;
+            }
+            .location .map{
+                width: 80vw;
+            }
+            .location .map iframe{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 768px){
+            .form label{
+                width: 100%;
+            }
+        }

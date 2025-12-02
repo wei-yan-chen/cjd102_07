@@ -81,14 +81,16 @@
 }
 .item-text{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: end;
     background-color: #191919;
     padding: 16px;
     /* height: 100%; */
 }
-.item-text h4{
+.item-text .itemName{
     color: #FF0066;
+    width: 100%;;
 }
 .item-dec{
     width: 46px;
@@ -98,27 +100,23 @@
     text-align: center;
     border-radius: 4px;
     font-size: 14px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 .wireless-color{
     background-color: #6247F8;
 }
 
-.item-bottom .btn{
-    font-size: 16px;
-    width: 117px;
-    height: 37px;
-    line-height: 30px;
-}
+
 .nt{
-    /* flex-shrink: 0; */
     text-align: end;
 }
 .nt h5{
     font-size: 18px;
 }
 .nt p{
+    font-weight: 800;
     font-size: 14px;
+    letter-spacing:0px;
     color: #B1ABAB;
     text-decoration:line-through;
 }
@@ -172,16 +170,19 @@
     }
     .store-nav{
         display: flex;
-        width: 80%;
-        justify-content: space-between;
+        width: 100%;
+        justify-content: center;
     }
     .store-nav li{
         /* background-color: #fff; */
-        padding: 10px;
+        padding: 10px 20px;
         height: 10px;
         line-height: 10px;
         border-bottom: none;
         border-right: 1px #B1ABAB solid;
+    }
+    .store-nav li:last-child{
+        border-right: none;
     }
     .store-content{
         justify-content: space-between;
@@ -189,6 +190,18 @@
     /* 卡片 */
     .store-content .item{
         width: 43vw;
+    }
+}
+
+@media screen and (max-width: 515px){
+    .store-nav li{
+        padding: 10px 12px;
+    }
+    .store-content .item{
+        width: 80vw;
+    }
+    .store-content{
+        justify-content: center;
     }
 }
 
