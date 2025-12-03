@@ -65,6 +65,12 @@ img {
     /* border-radius: 4px; */
     
 }
+input{
+    font-size: 16px;
+}
+input::placeholder{
+    color: #bebebe !important;
+}
 
 .btn {
     box-sizing: border-box;
