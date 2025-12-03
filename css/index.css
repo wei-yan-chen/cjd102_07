@@ -133,8 +133,8 @@
 
 /* #region swiper */
 .swiper {
-padding-top: 50px;
-padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 
 .swiper-slide-active{

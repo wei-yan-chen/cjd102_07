@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLUX</title>
     <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/Common.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/introduce.css">
@@ -103,11 +104,26 @@
                     </a>
                 </div>
             </div>
+
             <div class="product-introduce">
                 <div class="introduce-header">
                     <h2>FLUX-G8</h2>
                     <div class="dec" style="background-color: #A600FF; height: 8px;width: 100px;"></div>
                     <h5>Hyper-Flow 無線技術</h5>
+                    <!-- Slider main container -->
+                    <div class="swiper mySwiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="./image/introduce/large0.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./image/introduce/large1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./image/introduce/large2.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./image/introduce/large3.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./image/introduce/large4.png" alt=""></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
                     <p>G8 實現了業界前所未有的超低延遲，徹底消除訊號瓶頸。這款滑鼠專為渴望瞬發反應的頂級玩家設計，其輕量化機身和人體工學曲線，將您在競技場上先發制人。立即感受 FLUX 脈動的震撼，主宰您的遊戲世界。</p>
                 </div>
                 <div class="introduce-footer">
@@ -158,7 +174,7 @@
             <div class="wireless-img">
                 <img src="./image/introduce/wireless.png" alt="">
             </div>
-            <div class="wireless-text" data-aos="fade-left" data-aos-duration="2000">
+            <div class="wireless-text" data-aos="fade-up" data-aos-duration="1000">
                 <h2>Hyper-Flow 零感無線：有線般的極速響應</h2>
                 <p>告別無線延遲的惡夢。FLUX 專利的 Hyper-Flow 無線傳輸系統，專為競技而生。透過優化的頻譜跳躍技術和精密算法，我們將傳輸延遲壓縮至業界極限的小於 1 毫秒。無論是複雜多裝置的比賽現場，或是個人戰鬥空間，Hyper-Flow 都能確保您的指令與遊戲動作即時同步，提供絕對可靠的連線品質。</p>
             </div>
@@ -168,7 +184,7 @@
      <!-- 介紹dpi -->
       <section class="dpi bbg">
         <div class="dpi-box box">
-            <div class="dpi-text" data-aos="fade-right" data-aos-duration="2000">
+            <div class="dpi-text" data-aos="fade-up" data-aos-duration="1000">
                 <h2>FLUX-Sensor V2.0：像素級追蹤，無懈可擊</h2>
                 <p>真實 26,000 DPI： 提供無與倫比的 DPI 範圍，配合像素級 1:1 追蹤，無論在任何螢幕解析度或遊戲情境，你的瞄準都將毫無偏差。<br>
                 動作線性度優化： 內建先進校準演算法，消除高速移動下的追蹤失真，確保你的手腕微操，能百分之百地精準映射。</p>
@@ -185,7 +201,7 @@
                 <div class="switch-img">
                     <img src="./image/introduce/switch.png" alt="">
                 </div>
-                <div class="switch-text" data-aos="fade-left" data-aos-duration="2000">
+                <div class="switch-text" data-aos="fade-up" data-aos-duration="1000">
                     <h2>FLUX-Switch 瞬發微動：堅實回饋，瞬息觸發</h2>
                     <p> 8000 萬次壽命： 提供超凡的耐用性，承受最激烈的連點考驗。<br>
                         清脆觸感，極短行程： 提供完美的回饋感和瞬發觸發，讓你精確掌控每一次攻擊與技能施放。</p>
@@ -195,7 +211,7 @@
 
        <section class="light bbg">
             <div class="light-box box">
-                <div class="light-text" data-aos="fade-right" data-aos-duration="2500">
+                <div class="light-text" data-aos="fade-up" data-aos-duration="1000">
                     <h2>超輕量化設計：無感操控，持久戰力</h2>
                     <p>FLUX-G8 在堅固與輕盈之間達到了完美平衡。僅 68 克的機身重量，搭配人體工學曲線，讓滑鼠如同你手部的延伸。減少手部疲勞，讓你能在長時間的競技中依然保持巔銳狀態。</p>
                 </div>
@@ -232,6 +248,17 @@
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 
 </html>

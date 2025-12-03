@@ -23,7 +23,7 @@ small.addEventListener('click',function(e){
 
 // 放大鏡
 const magnifier = document.querySelector('.magnifier')
-// 滑鼠進圖片顯示放大鏡
+// 滑鼠進圖片顯示放大鏡(改用css)
 // largeImg.addEventListener('mouseover',function(){
 //     magnifier.style.display = 'block'
 // })
@@ -31,24 +31,28 @@ const magnifier = document.querySelector('.magnifier')
 // largeImg.addEventListener('mouseout',function(){
 //     magnifier.style.display = 'none'
 // })
+
+
 // 放大鏡效果
 // 對圖增加滑鼠移動事件
 largeImg.addEventListener('mousemove',function(e){
     // 算游標在圖上座標 (算法:游標位置-圖片座標 y軸多減滾動座標)
     let x = e.pageX - largeImg.getBoundingClientRect().left
     let y = e.pageY - largeImg.getBoundingClientRect().top - document.documentElement.scrollTop
+    console.log(e.pageX );
+    
 
     // 設定放大鏡框的座標變數 預設0
     let mx = 0 
     let my = 0
     // 判斷放大鏡位置 不讓放大鏡超過圖片
-    if (x < 100) mx = 0
-    if (x >= 100 && x <=500) mx = x -100
-    if (x > 500) mx = 400
+    if (x < 75) mx = 0
+    if (x >= 75 && x <=375) mx = x -75
+    if (x > 375) mx = 300
 
-    if (y < 100) my = 0
-    if (y >= 100 && y <=500) my = y -100
-    if (y > 500) my = 400
+    if (y < 75) my = 0
+    if (y >= 75 && y <=375) my = y -75
+    if (y > 375) my = 300
     magnifier.style.left = mx+'px'
     magnifier.style.top = my+'px'
 
