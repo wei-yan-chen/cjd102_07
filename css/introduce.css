@@ -432,10 +432,10 @@
 
 @media screen and (max-width: 515px){
     .wireless-img , .dpi-img,.switch-img,.light-img{
-        width: 100vw;
+        width: 100%;
     }
     .swiper-slide img{
-        width: 100vw;
+        width: 100%;
     }
     .swiper-pagination-bullet{
         width: 8px;        
