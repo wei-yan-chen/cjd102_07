@@ -62,8 +62,8 @@
                                 <span class="add-bar2"></span>
                             </div>
                             <ul class="menu">
-                                <li><a href="./account.html">會員註冊<span class="material-symbols-outlined show1">arrow_right</span></a></li>
-                                <li><a href="#">會員登入<span class="material-symbols-outlined show1">arrow_right</span></a></li>
+                                <li><a href="./account.html" id="sign-up">會員註冊<span class="material-symbols-outlined show1">arrow_right</span></a></li>
+                                <li><a href="./account.html" id="user">會員中心<span class="material-symbols-outlined show1">arrow_right</span></a></li>
                             </ul>
                         </label>
                     </li>
@@ -71,7 +71,7 @@
             </div>
             
             <div class="nav-icons">
-                <a href="#" id="uer-icon"><img src="./image/common/faUser.png" alt=""></a>
+                <a href="./account.html" id="uer-icon"><img src="./image/common/faUser.png" alt=""></a>
                 <a href="#" id="cart-icon"><img src="./image/common/cart.png" alt=""></a>
             </div>
         </nav>
@@ -294,6 +294,17 @@
             el: '.swiper-scrollbar',
         },
         });
+
+
+        document.querySelectorAll('#uer-icon ,#user').forEach((el)=>{
+            el.addEventListener('click',function(){
+                localStorage.setItem('login','1')
+                alert('請先登入會員')
+            }) 
+        })
+        document.querySelector('#sign-up').addEventListener('click',function(){
+            localStorage.removeItem('login')
+        })
     </script>
 </body>
 
