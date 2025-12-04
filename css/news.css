@@ -36,6 +36,7 @@
             height: 220px;
             margin-bottom: 9px;
             overflow: hidden;
+            background-color: #666;
         }
         .new-img img{
             width: 100% ;
