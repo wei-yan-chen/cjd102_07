@@ -252,6 +252,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
+        // 輪播圖
         var swiper = new Swiper(".mySwiper", {
             loop: true,
             pagination: {
@@ -259,6 +260,7 @@
             },
         });
 
+        // 會員登入 註冊邏輯
         document.querySelectorAll('#uer-icon ,#user').forEach((el)=>{
             el.addEventListener('click',function(){
                 localStorage.setItem('login','1')

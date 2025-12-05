@@ -57,9 +57,21 @@
     width: 100%;
     background-color: #000;
     color: #fff;
+    
+}
+.input-label input.active{
+    border: 1px rgb(253, 73, 73) solid;
+    outline: rgb(253, 73, 73);
 }
 .container input::placeholder{
     color: #fff;
+}
+
+/* 錯誤提示 */
+.msg{
+    color: rgb(253, 73, 73);
+    font-size: 14px;
+    margin: 5px 0 0 5px;
 }
 
 /* 同意 */
@@ -130,7 +142,7 @@
     color: #fff;
 }
 
-
+/* 切換登入註冊 */
 .toggle{
     cursor: pointer;
     color: #00FFFF;
