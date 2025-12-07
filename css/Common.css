@@ -62,8 +62,6 @@ p {
 
 img {
     display: block;
-    /* border-radius: 4px; */
-    
 }
 input{
     font-size: 16px;
@@ -71,7 +69,10 @@ input{
 input::placeholder{
     color: #bebebe !important;
 }
-
+button{
+    background-color: unset;
+    border: unset;
+}
 .btn {
     box-sizing: border-box;
     display: block;

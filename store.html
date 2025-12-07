@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/Common.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/store.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right,close" />
 </head>
 
 <body>
@@ -71,7 +71,39 @@
             
             <div class="nav-icons">
                 <a href="./account.html" id="uer-icon"><img src="./image/common/faUser.png" alt=""></a>
-                <a href="#" id="cart-icon"><img src="./image/common/cart.png" alt=""></a>
+                <a id="cart-icon"><img src="./image/common/cart.png" alt=""></a>
+            </div>
+            <div class="cart-cover"></div>
+            <div class="cart-box">
+                <div class="cart-header">
+                    <h3>購物車</h3>
+                    <button><span class="material-symbols-outlined">close</span></button>
+                </div>
+                <div class="cart-content" >
+                    <div class="cart-item">
+                        <div class="cart-img">
+                            <img src="./image/introduce/large0.png" alt="">
+                        </div>
+                        <div class="cart-text">
+                            <p>FLUX-G8</p>
+                            <div class="cart-text-bottom">
+                                <div class="count-box">
+                                    <button class="cart-bt cart-minus">-</button>
+                                    <span class="cart-value">1</span>
+                                    <button class="cart-bt cart-plus">+</button>
+                                </div>
+                                <p class="nt">NT$1990</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <p>總金額$<span>1,990</span></p>
+                        <button class="btn">結帳</button>
+                    </div>
+                </div>
+                <div class="cart-none active">
+                    <p>您的購物車是空的</p>
+                </div>
             </div>
         </nav>
     </header>
@@ -223,7 +255,8 @@
         </div>
     </footer>
 
-
+    <!-- 頂部購物車 -->
+    <script src="./js/cart.js"></script>
     <script src="./js/sort.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>

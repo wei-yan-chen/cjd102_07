@@ -110,14 +110,14 @@
     gap: 15px;
     background: white;
 }
-.count-box .bt {
+.introduce-footer .count-box .bt {
     border: none;
     background: none;
     font-size: 24px;
     cursor: pointer;
     padding: 0 5px;
 }
-.count-box .value {
+.introduce-footer .count-box .value {
     width: 40px;
     text-align: center;
     font-size: 20px;

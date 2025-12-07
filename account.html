@@ -7,7 +7,7 @@
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="./css/Common.css">
     <link rel="stylesheet" href="./css/account.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right,visibility,visibility_off" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right,visibility,visibility_off,close" />
 </head>
 <body>
     <!-- header導航 -->
@@ -68,7 +68,39 @@
             
             <div class="nav-icons">
                 <a href="./account.html" id="uer-icon"><img src="./image/common/faUser.png" alt=""></a>
-                <a href="#" id="cart-icon"><img src="./image/common/cart.png" alt=""></a>
+                <a id="cart-icon"><img src="./image/common/cart.png" alt=""></a>
+            </div>
+            <div class="cart-cover"></div>
+            <div class="cart-box">
+                <div class="cart-header">
+                    <h3>購物車</h3>
+                    <button><span class="material-symbols-outlined">close</span></button>
+                </div>
+                <div class="cart-content" >
+                    <div class="cart-item">
+                        <div class="cart-img">
+                            <img src="./image/introduce/large0.png" alt="">
+                        </div>
+                        <div class="cart-text">
+                            <p>FLUX-G8</p>
+                            <div class="cart-text-bottom">
+                                <div class="count-box">
+                                    <button class="cart-bt cart-minus">-</button>
+                                    <span class="cart-value">1</span>
+                                    <button class="cart-bt cart-plus">+</button>
+                                </div>
+                                <p class="nt">NT$1990</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <p>總金額$<span>1,990</span></p>
+                        <button class="btn">結帳</button>
+                    </div>
+                </div>
+                <div class="cart-none active">
+                    <p>您的購物車是空的</p>
+                </div>
             </div>
         </nav>
     </header>
@@ -172,6 +204,8 @@
     </footer>
 
 
+    <!-- 頂部購物車 -->
+    <script src="./js/cart.js"></script>
     <script src="./js/account.js"></script>
     <script>
         // header會員登入 註冊邏輯
